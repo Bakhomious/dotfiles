@@ -18,4 +18,3 @@
 ## Version Managers
 - [nvm](https://github.com/nvm-sh/nvm)
 - [SDKMAN!](https://github.com/sdkman/sdkman-cli)
-- 
