@@ -14,6 +14,7 @@
 - [bat](https://github.com/sharkdp/bat)
 - [eza](https://github.com/eza-community/eza)
 - [The Fuck](https://github.com/nvbn/thefuck)
+- [fd](https://github.com/sharkdp/fd)
 
 ## Version Managers
 - [nvm](https://github.com/nvm-sh/nvm)
