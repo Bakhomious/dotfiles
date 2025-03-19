@@ -99,4 +99,3 @@ alias config='/usr/bin/git --git-dir=/Users/bbasta/.cfg/ --work-tree=/Users/bbas
 # Key Bindings for Ghostty
 bindkey "^[[1;3D" backward-word # Alt + Left
 bindkey "^[[1;3C" forward-word  # Alt + Right
-
