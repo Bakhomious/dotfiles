@@ -18,7 +18,11 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   direnv
+  tmux
 )
+
+# Zsh tmux
+ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
 
