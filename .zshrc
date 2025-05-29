@@ -107,3 +107,11 @@ bindkey "^[[1;3C" forward-word  # Alt + Right
 # uv
 export PATH="/Users/bbasta/.local/bin:$PATH"
 export POSTING_EDITOR="nvim"
+
+# pnpm
+export PNPM_HOME="/Users/bbasta/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
