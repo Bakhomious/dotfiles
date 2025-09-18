@@ -115,3 +115,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Docker Colima
+export DOCKER_HOST=unix://${HOME}/.colima/default/docker.sock
