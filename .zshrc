@@ -9,6 +9,8 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Oh My Zsh - Plugins
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -44,6 +46,7 @@ source <(fzf --zsh)
 
 # Use fd instead of fzf 
 
+export FZF_COMPLETION_TRIGGER="**"
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
@@ -132,7 +135,27 @@ function y() {
 # Editor
 export EDITOR=nvim
 
-# Carapace
-export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
-zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
-source <(carapace _carapace)
+# Vim mode
+
+set -o vi
+
+# Aliases
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
+
+cx() { cd "$@" && l; }
+
+
+# Autocomplete
+autoload -Uz compinit
+compinit
+
+# IntelliJ Idea
+export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
+idea() { command idea "$@" >/dev/null 2>&1 & disown }
+
+# Kubectl
+alias k="kubectl"
+alias kgpo="kubectl get pods"
+
