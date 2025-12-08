@@ -159,3 +159,11 @@ idea() { command idea "$@" >/dev/null 2>&1 & disown }
 alias k="kubectl"
 alias kgpo="kubectl get pods"
 
+# Functions
+jwtd() {
+  local token=${1:-$(cat)}
+  jq -R 'split(".") |.[0:2] | map(gsub("-"; "+") | gsub("_"; "/") | gsub("%3D"; "=") | @base64d) | map(fromjson)' <<<$token
+}
+
+# Python
+export PATH="/opt/homebrew/opt/python@3.14/libexec/bin:$PATH"
