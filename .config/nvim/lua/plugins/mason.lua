@@ -19,7 +19,6 @@ return {
         "clangd", -- C/C++
         "cmake-language-server",
         "marksman", -- Markdown
-        "sqlls", -- SQL
 
         -- Formatters
         "google-java-format",

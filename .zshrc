@@ -165,5 +165,17 @@ jwtd() {
   jq -R 'split(".") |.[0:2] | map(gsub("-"; "+") | gsub("_"; "/") | gsub("%3D"; "=") | @base64d) | map(fromjson)' <<<$token
 }
 
+gitamend() {
+    git commit -a --amend --no-edit "$@"
+}
+
+alias gitlogl="git log --oneline"
+
 # Python
 export PATH="/opt/homebrew/opt/python@3.14/libexec/bin:$PATH"
+
+# Libpq
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Go
+export PATH="$HOME/go/bin:$PATH"

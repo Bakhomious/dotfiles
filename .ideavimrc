@@ -135,7 +135,7 @@ map <leader>c <action>(CommentByLineComment)
 map <leader>j <Plug>(easymotion-s)
 
 " Open NERDTree (use q to exit)
-map <leader>ee :NERDTreeToggle<CR>
+map <leader>e :NERDTreeToggle<CR>
 
 " Folding
 map <leader>zc :action CollapseAllRegions<CR>
