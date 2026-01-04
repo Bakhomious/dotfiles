@@ -13,6 +13,11 @@ return {
       --     "pug",
       --   },
       -- },
+      marksman = {
+        filetypes = {
+          "md",
+        },
+      },
       eslint = {
         settings = {
           useFlatConfig = true,
