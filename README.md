@@ -1,12 +1,13 @@
 # Dot Files
 
-# Terminal
+## Terminal
 
 - [ghostty](https://github.com/ghostty-org/ghostty)
 
 ## Installed Dependencies
 
 - [tmux](https://github.com/tmux/tmux)
+- [neovim](https://github.com/neovim/neovim)
 - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 - [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
@@ -15,8 +16,5 @@
 - [eza](https://github.com/eza-community/eza)
 - [The Fuck](https://github.com/nvbn/thefuck)
 - [fd](https://github.com/sharkdp/fd)
-- [direnv](https://github.com/direnv/direnv)
-
-## Version Managers
-- [nvm](https://github.com/nvm-sh/nvm)
-- [SDKMAN!](https://github.com/sdkman/sdkman-cli)
+- [mise](https://github.com/jdx/mise)
+- [GNU stow](https://www.gnu.org/software/stow/)

@@ -1,0 +1,41 @@
+# This is Git's per-user configuration file.
+[user]
+    name = Bakhomious Basta
+    email = bakhomioussvp@gmail.com
+
+[core]
+    pager = delta
+	autocrlf = input
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    # side-by-side = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+  colorMoved = default
+
+[credential]
+	helper = 
+  helper = /usr/local/share/gcm-core/git-credential-manager
+
+[credential "https://dev.azure.com"]
+  useHttpPath = true
+
+[push]
+  autoSetupRemote = true
+  
+[log]
+  abbrevCommit = true
+
+[pull]
+  rebase = true
+
+[includeIf "gitdir:~/workspace/"]
+  path = ~/.gitconfig.work
+

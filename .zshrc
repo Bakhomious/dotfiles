@@ -90,12 +90,6 @@ alias ls="eza --color=always --icons=always"
 eval $(thefuck --alias)
 eval $(thefuck --alias fk)
 
-# managing dotfiles with git
-# prior cmd: git init --bare $HOME/.cfg 
-#            alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-#            config config --local status.showUntrackedFiles no
-alias config='/usr/bin/git --git-dir=/Users/bbasta/.cfg/ --work-tree=/Users/bbasta'
-
 # Key Bindings for Ghostty
 bindkey "^[[1;3D" backward-word # Alt + Left
 bindkey "^[[1;3C" forward-word  # Alt + Right
