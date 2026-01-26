@@ -19,7 +19,6 @@ plugins=(
   git-auto-fetch
   zsh-syntax-highlighting
   zsh-autosuggestions
-  direnv
   tmux
 )
 
@@ -179,3 +178,6 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # Go
 export PATH="$HOME/go/bin:$PATH"
+
+# Mise
+eval "$(mise activate zsh)"
