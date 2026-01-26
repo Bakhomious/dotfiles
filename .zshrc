@@ -20,6 +20,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   tmux
+  fzf-tab
 )
 
 # Zsh tmux
@@ -32,13 +33,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Zoxide for navigation
 eval "$(zoxide init zsh)"
-
-# SDKMAN
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# NVM
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 
 # Fuzzy Find
 source <(fzf --zsh)
@@ -180,4 +174,7 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 
 # Mise
+alias m="mise run"
 eval "$(mise activate zsh)"
+
+enable-fzf-tab
