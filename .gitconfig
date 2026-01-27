@@ -19,14 +19,6 @@
 
 [diff]
   colorMoved = default
-
-[credential]
-	helper = 
-  helper = /usr/local/share/gcm-core/git-credential-manager
-
-[credential "https://dev.azure.com"]
-  useHttpPath = true
-
 [push]
   autoSetupRemote = true
   
@@ -39,3 +31,11 @@
 [includeIf "gitdir:~/workspace/"]
   path = ~/.gitconfig.work
 
+[includeIf "gitdir:~/workspace_alt/"]
+  path = ~/.gitconfig.work
+
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
